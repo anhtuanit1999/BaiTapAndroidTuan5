@@ -40,6 +40,7 @@ public class CustomProductAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         convertView = LayoutInflater.from(ctx).inflate(layoutitem, parent, false);
+
         TextView tvAbove = convertView.findViewById(R.id.tvAbove);
         TextView tvBottom = convertView.findViewById(R.id.tvBottom);
         ImageView imgV_Ava = convertView.findViewById(R.id.imgV_Ava);
@@ -47,6 +48,6 @@ public class CustomProductAdapter extends BaseAdapter {
         tvAbove.setText(arrayList.get(position).getNameProduct());
         tvBottom.setText(arrayList.get(position).getNameShop());
         imgV_Ava.setImageResource(arrayList.get(position).getImgProduct());
-        return null;
+        return convertView;
     }
 }

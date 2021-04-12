@@ -8,53 +8,49 @@
 
     <ImageView
         android:id="@+id/imgV_Ava"
-        android:layout_width="97dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ca_nau_lau"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvAbove"
-        android:layout_width="64dp"
-        android:layout_height="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imgV_Ava"
+        android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/btnChat"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toEndOf="@+id/imgV_Ava"
-        app:layout_constraintTop_toTopOf="@+id/imgV_Ava"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnChat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_btnchat"
+        android:layout_width="74dp"
+        android:layout_height="46dp"
+        android:background="@drawable/ca_nau_lau"
         android:text="Chat"
-        android:textColor="#ffffff"
-        app:backgroundTint="@drawable/bg_btnchat"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imgV_Ava"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toEndOf="@+id/imgV_Ava"
-        app:layout_constraintTop_toTopOf="@+id/imgV_Ava"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintTop_toTopOf="@+id/imgV_Ava" />
 
     <TextView
         android:id="@+id/tvBottom"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imgV_Ava"
+        android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/btnChat"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toEndOf="@+id/imgV_Ava"
-        app:layout_constraintTop_toTopOf="@+id/imgV_Ava"
-        app:layout_constraintVertical_bias="0.662" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbove" />
 </androidx.constraintlayout.widget.ConstraintLayout>

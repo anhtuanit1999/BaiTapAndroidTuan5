@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Product("Hiểu lòng trẻ con", "Shop Minh Long Book", R.drawable.hieu_long_con_tre));
         arrayList.add(new Product("Donal Trump Thiên tài lãnh đạo", "Shop Minh Long Book", R.drawable.trump));
 
-        adt = new CustomProductAdapter(this, R.layout.item_listview, arrayList);
+        adt = new CustomProductAdapter(MainActivity.this, R.layout.item_listview, arrayList);
         listView.setAdapter(adt);
     }
 }
